@@ -1,0 +1,167 @@
+/* Se seleccionan todos los elementos para agregarle la propiedad box-sizing con el valor border-box y definiendo los pagin y margin a 0*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Establezco un tamaño de fuente al html de 16px para poder escalar las fuentes en telefonos. */
+html {
+    font-size: 16px;
+}
+
+/* Se modifican los estilos del body. */
+body {
+
+    /* Establece valores por defecto a la fuente de la pagina. */
+    font-family: figtree;
+    line-height: 150%;
+
+    /* Se usa height con un valor de 100vh para que ocupe todo el alto de la ventana. */
+    height: 100vh;
+
+    /* Se centran todos los elementos con las propiedades de flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Se establece en color de fondo */
+    background-color: #F4D04E;
+
+
+}
+
+/* Se modifican los estilos de la etiqueta main que es el elemento central */
+
+main {
+
+    /* Se le agrega el alto y el ancho. */
+    width: 384px;
+    max-width: 87% ;
+
+    /* Se le agrega un padding de 24px */
+    padding: 24px;
+
+    /* Se le agrega un color blanco de fondo. */
+    background-color: #FFF;
+
+    /* Se le coloca un borde negro y se redondean sus esquinas. */
+    border: 1px solid #000;
+    border-radius: 20px;
+
+    /* Se le agrega una sombra. */
+    box-shadow: 8px 8px 0 #000;
+}
+
+/* Se  modifican los estilos de la imagen.*/
+.card-img {
+
+    /* Se le redondean las esquinas. */
+    border-radius: 10px;
+
+    /* Se le declara un maximo para el alto y el ancho. */
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+    /* Se agrega un margin-bottom con el valor de 24px para separa la imagen. */
+    margin-bottom: 24px;
+}
+
+/* Se modifican los estilos de la etiqueta header y los elementos que lo conforman. */
+
+/* El contenedor section y header hijo se convierte en flex para poder usar gap y separa todos los elementos dentro de estos con 12px */
+.card-seccionInfo, .card-seccionInfo-cabecera {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+/* Se modifica el div con el texto Learnig */
+.card-seccionInfo-cabecera > div {
+
+    /* Se declara el ancho y la altura */
+    width: 82px;
+    height: 29px;
+
+    /* Se declara el color del fondo. */
+    background-color: #F4D04E;
+
+    /* Se le coloca un pading. */
+    padding: 4px 8px;
+
+    /* Se le redondean las esquinas. */
+    border-radius: 4px;
+
+    /* Se le modifica el estilo de la funte del texto que contiene dentro. */
+    font-weight: 800;
+    font-size: .875rem;
+
+    /* Se centra el texto. */
+    text-align: center;
+}
+
+/* Se modifica los estilos del texto de la fecha de publicación.*/
+.card-seccionInfo-cabecera > p {
+    font-size: .875rem;
+    font-weight: medium;
+}
+
+/* Se modifica el estilo del texto del titulo. */
+.card-seccionInfo-cabecera > h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+/* Le le agrega un :hover para cambiar el color del texto y el cursor cuando se pase el mouse por encima. */
+.card-seccionInfo-cabecera > h1:hover {
+    color: #F4D04E;
+    cursor: pointer;
+}
+
+/* Se modifican los estilos del texto de la descripción */
+.card-seccionInfo-text {
+    font-size: 1rem;
+    font-weight: medium;
+
+    /* Se le cambia el color de la fuente.*/
+    color: #6B6B6B;
+}
+
+/* Modifico el pie de la tarjeta. */
+footer {
+
+    /* Agrego un margin-top para separar el footer. */
+    margin-top: 24px;
+
+}
+
+/* Modifico el div que contiene la foto y el nombre del autor*/
+footer > div {
+    /* Uso flex para poder separar sus elemtos hijos con gap. */
+    display: flex;
+    gap: 12px;
+}
+
+/* Modifico el tamaño de la imagen del autor */
+footer>div>img{
+    /* Declaro un alto y un ancho para la imagen */
+    width: 32px;
+    height: 32px;
+}
+
+/* Modifico los estilos de la fuente del autor */
+footer>div>p {
+    /* Se le modifica el tamaño y el grosor. */
+    font-size: .875rem;
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+    /* Se modifica el tamaño de la fuente en pantallas menores a 768px */
+    html {
+        font-size: 14px;
+    }
+}
