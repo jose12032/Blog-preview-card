@@ -83,8 +83,7 @@ main {
 .card-seccionInfo-cabecera > div {
 
     /* Se declara el ancho y la altura */
-    min-width: 82px;
-    max-width: fit-content;
+    width: 82px;
     height: 29px;
 
     /* Se declara el color del fondo. */
