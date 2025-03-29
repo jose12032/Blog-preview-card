@@ -83,7 +83,8 @@ main {
 .card-seccionInfo-cabecera > div {
 
     /* Se declara el ancho y la altura */
-    width: 82px;
+    min-width: 82px;
+    max-width: fit-content;
     height: 29px;
 
     /* Se declara el color del fondo. */
@@ -150,6 +151,7 @@ footer>div>img{
     /* Declaro un alto y un ancho para la imagen */
     width: 32px;
     height: 32px;
+
 }
 
 /* Modifico los estilos de la fuente del autor */
@@ -157,6 +159,7 @@ footer>div>p {
     /* Se le modifica el tamaño y el grosor. */
     font-size: .875rem;
     font-weight: 800;
+    line-height: 200%;
 }
 
 @media (max-width: 768px) {
